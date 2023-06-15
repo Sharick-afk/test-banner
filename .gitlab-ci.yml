@@ -1,0 +1,3 @@
+include:
+  - project: 'info-lands/deploy'
+    file: '.gitlab-ci.deploy_node18.yml'

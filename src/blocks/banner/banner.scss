@@ -1,0 +1,268 @@
+.adbro-thuyen-xua {
+  display: flex;
+  width: 903px;
+  flex-direction: column;
+  &__top {
+    position: relative;
+    height: 422px;
+    background: #c4c4c4;
+    overflow: hidden;
+    > div {
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &__link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    opacity: 0;
+  }
+  &__title {
+    left: 180px;
+    bottom: 16px;
+    width: 226px;
+    height: 37px;
+    transform: translate(0, -20px);
+    opacity: 0;
+    background-image: url(../img/title.png);
+    animation: title 0.3s 0.3s forwards;
+  }
+  &__bg {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 700px;
+    height: 95px;
+    opacity: 0;
+    background-image: url(../img/bg.png);
+    animation: bg 0.5s forwards;
+  }
+  &__pic {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 79px;
+    height: 140px;
+    background-image: url(../img/pic1.png);
+    animation: pic 2s infinite;
+    transform-origin: bottom center;
+  }
+  &__logo {
+    right: 330px;
+    bottom: 6px;
+    width: 56px;
+    height: 56px;
+    transform: translate(0, -20px);
+    opacity: 0;
+    background-image: url(../img/logo.png);
+    animation: logo 0.3s 0.3s forwards;
+    &.shake {
+      transform: translate(0, 0px);
+      opacity: 1;
+      animation: shake 2s 2s infinite;
+    }
+  }
+  &__boat {
+    right: 204px;
+    bottom: 0;
+    width: 115.37px;
+    height: 90.37px;
+    background-image: url(../img/boat.png);
+  }
+  &__btn {
+    right: 215px;
+    bottom: 15px;
+    width: 78px;
+    height: 22px;
+    background-image: url(../img/btn.png);
+    z-index: 2;
+    animation: btn 2s infinite;
+  }
+  &__close {
+    right: 175px;
+    bottom: 79px;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/close.svg);
+  }
+  &__info {
+    right: 175px;
+    bottom: 50px;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/info.svg);
+  }
+  &__fish--1 {
+    left: 219px;
+    bottom: 47px;
+    width: 61.02px;
+    height: 49px;
+    background-image: url(../img/fish1.png);
+    animation: fish 4.5s infinite linear;
+    transform-origin: 30px 100px;
+  }
+  &__fish--2 {
+    left: 315px;
+    bottom: 56px;
+    width: 53.41px;
+    height: 36.42px;
+    background-image: url(../img/fish2.png);
+    animation: fish 3.5s infinite linear;
+    transform-origin: 70px 100px;
+  }
+  &__fish--3 {
+    right: 334px;
+    bottom: 67px;
+    width: 63.26px;
+    height: 54.03px;
+    background-image: url(../img/fish3.png);
+    animation: fish2 3s infinite linear;
+    transform-origin: -10px 100px;
+  }
+  &__fish--4 {
+    right: 219px;
+    bottom: 56px;
+    width: 62.92px;
+    height: 53.16px;
+    background-image: url(../img/fish4.png);
+    animation: fish2 4s infinite linear;
+    transform-origin: 50px 100px;
+  }
+  &__bottom {
+    display: flex;
+    width: 775px;
+    height: 299px;
+    margin: 77px auto 0;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+  }
+  &__wrapper {
+    > a {
+      display: flex;
+      min-width: 180px;
+      max-width: 180px;
+      height: 270px;
+      background-size: cover;
+      overflow: hidden;
+    }
+  }
+  &__slider {
+    position: relative;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  &__slide1 {
+    background-image: url(../img/slide1.png);
+  }
+  &__slide2 {
+    background-image: url(../img/slide2.png);
+  }
+  &__slide3 {
+    background-image: url(../img/slide3.png);
+  }
+  &__slide4 {
+    background-image: url(../img/slide4.png);
+  }
+  &__slide-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, 0);
+    width: 162px;
+    height: 37.18px;
+    background-image: url(../img/slider-btn.png);
+    background-size: contain;
+  }
+}
+
+@keyframes bg {
+  100% {
+    transform: translate(-50%, 0%);
+    opacity: 1;
+  }
+}
+@keyframes logo {
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+@keyframes title {
+  100% {
+    transform: translate(0, 0%);
+    opacity: 1;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  45% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes fish {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fish2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes btn {
+  0% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(-4px, 0);
+  }
+  30% {
+    transform: translate(4px, 0);
+  }
+  45% {
+    transform: translate(-4px, 0);
+  }
+  60% {
+    transform: translate(4px, 0);
+  }
+  75% {
+    transform: translate(0, 0);
+  }
+  100% {
+  }
+}
+@keyframes pic {
+  20% {
+    transform: translate(-50%, 0) scale(1.1);
+  }
+}

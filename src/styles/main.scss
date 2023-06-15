@@ -1,0 +1,64 @@
+@import "./fonts";
+@import "./normalize";
+@import "./variables";
+@import "./mixins";
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+picture {
+  img {
+    max-width: 100%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 130%;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1452px;
+  box-sizing: border-box;
+}
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+  border: 0;
+  &--main,
+  &--form {
+  }
+
+  &--lc {
+  }
+}
